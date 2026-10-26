@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3-1 AI 時代的心態筆記</title>
+<meta name="description" content="《AI 頭腦升級 321》第三大腦 3-1 直播（2026/10/22）重點筆記">
+<style>
+:root{
+  --bg:#faf7f2; --card:#ffffff; --text:#2a2622; --muted:#6f675e; --line:#e8e0d4;
+  --accent:#c9822b; --accent-soft:#fdf1de; --key:#2f6f5e; --key-soft:#e5f3ee; --warn:#b4472f; --warn-soft:#fbe9e4;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#1a1816; --card:#242220; --text:#ece6dc; --muted:#a39a8d; --line:#3a3631;
+  --accent:#e5a04d; --accent-soft:#3a2f1e; --key:#6fc3a9; --key-soft:#1f3029; --warn:#e8836b; --warn-soft:#3a231e;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.85 -apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px 80px}
+header{padding:40px 0 8px}
+.meta{color:var(--muted);font-size:14px;letter-spacing:.04em}
+h1{font-size:28px;line-height:1.4;margin:8px 0 20px}
+.tldr{background:var(--accent-soft);border-left:5px solid var(--accent);border-radius:10px;padding:16px 18px;margin:0 0 8px}
+.tldr h2{margin:0 0 6px;font-size:15px;color:var(--accent);border:0;padding:0}
+.tldr ol{margin:0;padding-left:1.3em}
+.tldr li{margin:4px 0;font-weight:600}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px}
+nav a{font-size:14px;color:var(--muted);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:4px 12px;border-radius:99px}
+section{margin-top:44px}
+h2{font-size:22px;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+h3{font-size:18px;margin:24px 0 6px}
+p{margin:10px 0}
+ul,ol{padding-left:1.4em}
+li{margin:6px 0}
+.key{background:var(--key-soft);border-left:5px solid var(--key);border-radius:10px;padding:12px 16px;margin:18px 0}
+.key b.t{display:block;color:var(--key);font-size:13px;letter-spacing:.08em;margin-bottom:2px}
+.warn{background:var(--warn-soft);border-left:5px solid var(--warn);border-radius:10px;padding:12px 16px;margin:18px 0}
+.warn b.t{display:block;color:var(--warn);font-size:13px;letter-spacing:.08em;margin-bottom:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.grid{grid-template-columns:1fr} h1{font-size:24px}}
+.grid .card{margin:0}
+.card h4{margin:0 0 4px;font-size:16px}
+.layers{counter-reset:l;list-style:none;padding:0}
+.layers li{counter-increment:l;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px 10px 52px;position:relative;margin:8px 0}
+.layers li::before{content:counter(l);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--line);color:var(--text);display:grid;place-items:center;font-size:14px;font-weight:700}
+.layers li.hot{border-color:var(--key);background:var(--key-soft)}
+.layers li.hot::before{background:var(--key);color:#fff}
+.layers small{display:block;color:var(--muted);font-size:14px;line-height:1.5}
+.steps{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap}
+.steps .card{flex:1 1 150px;text-align:center;margin:0}
+.steps .arrow{align-self:center;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;background:var(--line);color:var(--muted);border-radius:6px;padding:0 8px;margin-right:6px}
+footer{margin-top:60px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="meta">《AI 頭腦升級 321》第三大腦 3-1 ｜ 2026/10/22 直播</div>
+  <h1>換上 AI 時代的心態：放大你本來擁有的</h1>
+  <div class="tldr">
+    <h2>三行看懂這堂課</h2>
+    <ol>
+      <li>AI 不是來取代你，是來「放大」你：你懂多少、經驗多深，它就放大多少。</li>
+      <li>AI 讀遍整個網路，唯獨沒讀過你。讓它懂你的關鍵是「你的說明書」和「第二大腦知識庫」，比會寫 prompt 重要。</li>
+      <li>核心能力叫「釀蜜力」：採集 → 放對位置 → 用自己的大腦加工。作業 3-1 就是做出你的第一位 AI 員工。</li>
+    </ol>
+  </div>
+  <nav>
+    <a href="#s1">本堂收穫</a><a href="#s2">AI 是什麼</a><a href="#s3">放大你</a>
+    <a href="#s4">為什麼還要學</a><a href="#s5">釀蜜力</a><a href="#s6">五層訊號</a>
+    <a href="#s7">變現與資安</a><a href="#s8">課程規則</a><a href="#s9">下一步</a>
+  </nav>
+</header>
+
+<section id="s1">
+  <h2>本堂四個收穫</h2>
+  <ol>
+    <li>看懂 AI 到底是什麼：模型、AI Agent 各是什麼。</li>
+    <li>換上 AI 時代的心態：AI 會放大你原本擁有的東西。</li>
+    <li>認識「釀蜜力」：不管 AI 變多快都用得上的底層能力。</li>
+    <li>知道第一份作業：建立你的第一位 AI 員工。</li>
+  </ol>
+  <p>這堂是心態與通識課，還沒有要動手操作 AI Agent，先把「適應 AI 時代」的底子打好。</p>
+</section>
+
+<section id="s2">
+  <h2>AI 到底是什麼</h2>
+  <h3>從「會聊天」到「會動手」</h3>
+  <p>GPT、Claude、Gemini 的網頁版是「你問它答」。AI Agent（AI 員工）則會自己到你的電腦或雲端拿資料、動手做出成品。這兩種相隔不到兩年，所以老師要教的不是「哪個 AI 最強」，而是不會過時的底層能力。</p>
+
+  <h3>模型 = 腦袋，外殼 = 身體</h3>
+  <div class="grid">
+    <div class="card"><h4>🧠 模型（腦袋）</h4>程度不同：有的像國中生、有的能答哲學題、有的專寫程式。可以換，大家都買得到，要另外付費。</div>
+    <div class="card"><h4>🧍 外殼（AI Agent）</h4>如 Claude Code、Claude Cowork、Codex。外殼有記憶，記得你是誰、做過什麼，而且資料放在本機。</div>
+  </div>
+  <p>Claude Code 偏底層、寫程式；Cowork 給一般上班族，較好上手，兩者本質相同；Codex 是 OpenAI 的寫程式員工。同一個外殼可以今天裝這顆腦、明天換那顆。</p>
+
+  <h3>AI 其實是在「猜」</h3>
+  <p>AI 吃下網路上幾十年的文字，回答時是猜「最多人會怎麼接下一句」。問「今天天氣真…」，它會說「好」，因為網路上多數人這樣寫。</p>
+  <div class="warn">
+    <b class="t">案例：地鐵 A 出口</b>
+    老師的房客問 AI 最近的出口，AI 答 A 出口（模型裡最常見的答案），但那個站很大，實際最近的是 E 出口，房客因此多走 20 分鐘。AI 一本正經地講錯，所以你的腦袋和在地經驗還是很重要。
+  </div>
+</section>
+
+<section id="s3">
+  <h2>心態一：AI 不是取代你，是放大你</h2>
+  <p>AI 的智商已經遠超人類，不要跟它比聰明，把它當輔助。你本來很強，放大後很強；你本來很弱，放大後也很弱。</p>
+  <div class="key">
+    <b class="t">重點</b>
+    你的 know-how 越多、越精準、越有經驗，AI 就越強大。
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h4>🎬 例一：剪短影片</h4>
+      老師從零蒐集課程筆記、逐字稿、動畫設計，一步步搭平台，步驟很細。做代操的朋友自己就有爆款公式，哪裡能省他一眼就知道，平台邏輯完全不同。
+    </div>
+    <div class="card">
+      <h4>🃏 例二：卡牌遊戲</h4>
+      老師兩天做出娛樂用卡牌，題目靠上網查。心理諮商師朋友做的卡牌，每張都有心理學論文支撐，還附「現在該怎麼走」的具體步驟。差別在專業，不在 AI。
+    </div>
+  </div>
+</section>
+
+<section id="s4">
+  <h2>為什麼有 AI 還要自己學？</h2>
+  <ul>
+    <li><b>神經元連結只有你自己能建立。</b>每天閱讀、跟長輩聊天的人，和「問 AI 就好」的人，差距會越拉越大。</li>
+    <li><b>別只吃 AI 咀嚼過的。</b>AI 的報告像裝在奶瓶裡餵你，你要自己再想一遍，補上它缺的。</li>
+    <li><b>要當覺醒者。</b>我們控制手機，不要被手機控制；用 AI 也一樣，別變成 AI 的產品或資料。</li>
+  </ul>
+
+  <h3>第一大腦的幾種能力</h3>
+  <div class="card">
+    <p><span class="tag">批判性思維</span>會質疑 AI。例：老師請 GPT 生圖，AI 說「已附兩張圖」，其實根本沒附，老師一眼看出並糾正。</p>
+    <p><span class="tag">問對問題</span>一開始講清楚就不用來回，省 Token 也省時間。</p>
+    <p><span class="tag">判斷與品味</span>AI 給你 10 個版本，哪個 OK 由你決定。</p>
+    <p><span class="tag">系統思維</span>看一個點時，要想到它牽動什麼。例：每個學生的圖都同髮色、同動作，會影響使用者體驗。</p>
+    <p><span class="tag">認識自己</span>知道自己哪裡不懂，才不會被帶著跑。</p>
+  </div>
+
+  <h3>七階進化（L1–L7）</h3>
+  <p>問答使用者 → 下指令 → … → 流程設計者（開始寫 Skill，很多人卡在這關）→ 系統整合者（串多個知識庫與 Agent）→ 代理治理 → 認知架構（上帝視角，看懂整個世界在做什麼）。</p>
+
+  <h3>玩心</h3>
+  <div class="key">
+    <b class="t">老師金句</b>
+    這個時代玩得開心的人才走得遠。把 AI 當好玩的玩具、當自己的電動，沉浸其中，就是學得最快的人。
+  </div>
+</section>
+
+<section id="s5">
+  <h2>釀蜜力：三個步驟</h2>
+  <div class="steps">
+    <div class="card"><h4>① 採集吸收</h4>會議記錄、Podcast、YouTube、日記、LINE 對話、文章、課程…</div>
+    <div class="arrow">→</div>
+    <div class="card"><h4>② 放對位置</h4>Notion、Obsidian、NotebookLM、Word、PDF、備忘錄都行，你和 AI 找得到就好</div>
+    <div class="arrow">→</div>
+    <div class="card"><h4>③ 釀造</h4>認知加工：動用第一大腦，變成屬於你的東西</div>
+  </div>
+  <p>例：老師玩過很多遊戲、懂商業設計，把這些經過自己的大腦，釀成楓之谷風格的遊戲化課程平台。</p>
+
+  <h3>三個大腦的順序（321）</h3>
+  <div class="grid">
+    <div class="card"><h4>第一大腦</h4>原生大腦：判斷哪件事值得做、決定採用哪一份報告。最深，作業不准用 AI。</div>
+    <div class="card"><h4>第二大腦</h4>結構化的知識庫，把 AI 「融成你的形狀」。</div>
+    <div class="card"><h4>第三大腦</h4>AI Agent：有眼、耳、手腳（還沒有鼻子），能自動做事。</div>
+    <div class="card"><h4>為什麼倒著教</h4>先用第三大腦拿到結果會興奮；用久了發現需要第二大腦；再發現第一大腦最重要。</div>
+  </div>
+
+  <h3>第一大腦課程預告</h3>
+  <p>速讀、抓重點、邏輯思維、系統思維、第一性原理（拆解到最細，決定留哪個丟哪個）、技控（優化流程、省步驟、自動化）。</p>
+</section>
+
+<section id="s6">
+  <h2>AI 回答你之前，穿過五層訊號</h2>
+  <ol class="layers">
+    <li>訓練資料<small>書籍、文章、程式碼。你碰不到。</small></li>
+    <li>系統提示詞<small>公司訂的規範（例如不能講暴力色情）。你碰不到。</small></li>
+    <li class="hot">你的說明書<small>CLAUDE.md／AGENTS.md：AI 先讀「你是誰」。你可以控制，3-1 作業就是寫這個。</small></li>
+    <li class="hot">專案知識<small>你的第二大腦：某領域的深度脈絡。你可以控制，槓桿最高。</small></li>
+    <li>你打的那句話<small>prompt。重要，但沒有外面教得那麼重要。</small></li>
+  </ol>
+  <div class="key">
+    <b class="t">重點</b>
+    與其鑽研 prompt 怎麼寫，不如把第 3、4 層做好。第二大腦夠完整，你隨口講的話 AI 也聽得懂。
+  </div>
+  <p><b>現場示範：</b>老師只打「收尾」兩個字（其實不是正式詞），他的 AI 因為已有說明書和知識庫，就懂是要跑「收尾」流程。同樣的字丟給一般 GPT，只會得到不太好的答案。</p>
+  <p>同一個 AI，媽媽問和老師問，答案差很多：重點不在模型，而在問的人是誰、AI 懂不懂他的背景。</p>
+</section>
+
+<section id="s7">
+  <h2>把自己數位化，以及變現與資安</h2>
+  <h3>你的經驗要放進 AI 吃得到的地方</h3>
+  <ul>
+    <li>AI 讀不到你的日記、長輩的經驗、紙本筆記。手寫的東西要掃描或拍照數位化，AI 看得懂圖片（字要寫清楚）。</li>
+    <li>老師現在用數位日記；語音輸入工具也很有用。</li>
+    <li>未來網路上會有大量 AI 生成的內容（有人一天發 40 篇），AI 越吃越模糊。所以更要練好第一大腦，知道該問誰、怎麼問。</li>
+  </ul>
+  <div class="card">
+    <h4>怎麼判斷該問誰？</h4>
+    手斷了，你會問 100 個村民，還是問一位醫生？AI 有時像村民投票，專業的人和在地的人更準。
+  </div>
+
+  <h3>學會之後的出路</h3>
+  <ul>
+    <li>AI 剪片：老師寫好 Skill，一支客戶影片約 15 分鐘。</li>
+    <li>架網站、建系統（vibe coding）。</li>
+    <li>企業知識管理數位化：把紙本帳冊、會議記錄整理成企業的「第二大腦」，對岸已有人專門接這類案子。</li>
+    <li>知道自己的強項：喜歡「建構」還是「拆解」。</li>
+  </ul>
+  <div class="warn">
+    <b class="t">資安提醒</b>
+    現在幾乎沒有絕對的資安，底層被攻擊（如 PHP 漏洞）時，網站會一起倒。接企業系統案子時，一定要搭配專業資安工程師；不要把護城河建立在「資安」上。
+  </div>
+</section>
+
+<section id="s8">
+  <h2>課程與平台規則</h2>
+  <div class="card">
+    <ul>
+      <li><b>上課：</b>每週四 20:00（約 90 分鐘）。可能加課，會排在週二 20:00，不會少課。</li>
+      <li><b>結業：</b>12/10，結業後半年內持續回答問題。</li>
+      <li><b>交作業：</b>老師審核通過才開下一關、可以開寶箱。</li>
+      <li><b>團體諮詢：</b>每週一 20:00，先在後臺填問題。第一次是 10/26。</li>
+      <li><b>問問題：</b>盡量在後臺社群問（可賺樂狗幣，也能留給下一屆學員看）。</li>
+      <li><b>官方 LINE：</b>48 小時內回覆。</li>
+    </ul>
+  </div>
+  <h3>樂狗幣怎麼賺</h3>
+  <ul>
+    <li>直播課全部答對：1000 幣</li>
+    <li>一般作業通過：1500 幣；區域網組隊任務：1500 幣</li>
+    <li>每日打卡分享：50 幣；連續 7 天有加碼</li>
+    <li>課前影片標記完成、登島卡分享：各 50 幣</li>
+    <li>回報 bug：10 幣；回饋別人的作業、被按愛心也有</li>
+  </ul>
+  <p>幣目前只能賺不能買，可以換老師研發的 Skill，之後也會有合作廠商的實體商品。平台右上角可切換「專業模式」，畫面更簡潔。</p>
+  <div class="key">
+    <b class="t">這個平台本身也是教材</b>
+    老師花了約 5 個月、邊學邊做才完成。你可以反向拆解他的商業設計與作業系統，但你做出的東西會因為你的經驗而完全不同。
+  </div>
+</section>
+
+<section id="s9">
+  <h2>作業與下一步</h2>
+  <h3>3-1 作業：建立你的第一位 AI 員工</h3>
+  <ul>
+    <li>明天開放自學包（遊戲平台：地圖 → 3-1 小怪）。至少要花約半小時。</li>
+    <li><b>新手：</b>照自學包一步一步裝。<b>老手：</b>會有一份讓你的 AI 直接讀的檔案，建議用新資料夾走一遍。</li>
+    <li>在這份作業裡寫出你的說明書（CLAUDE.md／AGENTS.md）。</li>
+    <li>幫你的 AI 取個名字，像叫一個「幕僚」，有名字的員工有自己的記憶與資料，用起來更有感覺。</li>
+    <li>有不懂的，在作業區或社群問。</li>
+  </ul>
+  <h3>接下來的課</h3>
+  <ul>
+    <li><b>下週四：</b>陪跑課。還沒完成的一起做，完成的現場出題讓你的 AI 實作。</li>
+    <li>再之後：教 AI 的五感，眼睛、嘴巴、耳朵、手腳。</li>
+  </ul>
+  <p>另外，老師搬到廈門後，有考慮辦實體聚會，歡迎有興趣的同學回報意願。</p>
+</section>
+
+<footer>
+  依 2026/10/22 直播逐字稿整理，語音轉錄原稿可能有少量誤字，內容以老師課堂與課程後臺為準。
+</footer>
+</div>
+</body>
+</html>
